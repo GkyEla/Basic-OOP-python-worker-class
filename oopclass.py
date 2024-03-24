@@ -8,14 +8,27 @@ class worker():
         print('Worker class created.')
         self.skills = []
         self.wage = 2000
-        self.work_days = 0
+        self.work_days = 1
+    def work(self):
+        self.work_days+= 1
+    def promotion(self):
+        self.wage +=300
+
 
 mike = worker()
+print('day one')
 mike.skills.append('knows ruby')
-mike.wage = 1700
-
+mike.work
 print(mike.wage)
-print(mike.work_times)
+print(mike.work_days)
+
+print('day two')
+mike.work()
+mike.promotion()
+print(mike.wage)
+print(mike.work_days)
+
+
 
 
 
